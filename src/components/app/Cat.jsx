@@ -2,24 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './App.css';
 
-const Cat = ({ image, name, temperament }) => (
+const Cat = ({ image, name }) => (
   <figure>
     {
-      image ?
-        <img src={image.url} />
-        : 
+      !image || image.url === undefined ?
         <p>No Image Found</p>
+        : 
+        <img src={image.url} />
 
     }
     <p className={styles.catName}>{name}</p>
-    <p className={styles.catTemper}>{temperament}</p>
   </figure>
 );
 
 Cat.propTypes = {
   image: PropTypes.object,
-  name: PropTypes.string.isRequired,
-  temperament: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired
 };
 
 export default Cat;

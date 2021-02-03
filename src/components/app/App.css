@@ -10,16 +10,17 @@ html {
 .catList {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .cat {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 }
 
 img {
-    height: 200px;
-    width: 200px;
+    height: 250;
+    width: 250px;
     object-fit: cover;
 }
 

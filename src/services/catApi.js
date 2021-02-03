@@ -1,9 +1,11 @@
-export const getCharacters = () => {
-  return fetch('https://api.thecatapi.com/v1/breeds')
+const URL = 'https://api.thecatapi.com/v1/breeds';
+
+export const getCats = () => {
+  return fetch(`${URL}`)
     .then(res => res.json());
 };
 
-export const getImages = () => {
-  return fetch('https://api.thecatapi.com/v1/images/search')
+export const getCat = (id) => {
+  return fetch(`${URL}/${id}`)
     .then(res => res.json());
 };

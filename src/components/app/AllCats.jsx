@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getCharacters } from '../../services/catApi';
+import { getCats } from '../../services/catApi';
 import CatList from './CatList';
 
 export default class AllCats extends Component {
@@ -8,7 +8,7 @@ export default class AllCats extends Component {
     }
 
     componentDidMount() {
-      getCharacters()
+      getCats()
         .then(cats => this.setState({ cats }));
     }
 

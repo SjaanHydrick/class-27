@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Cat from './Cat';
 import styles from './App.css';
@@ -6,7 +7,9 @@ import styles from './App.css';
 const CatList = ({ cats }) => {
   const catElements = cats.map(cat => (
     <div className={styles.cat} key={cat.id}>
-      <Cat {...cat} />
+      <Link to={`/${cat.id}`}>
+        <Cat {...cat} />
+      </Link>
     </div>
   ));
 
@@ -21,8 +24,7 @@ CatList.propTypes = {
   cats: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
     image: PropTypes.object,
-    name: PropTypes.string.isRequired,
-    temperament: PropTypes.string.isRequired
+    name: PropTypes.string.isRequired
   })).isRequired
 };
 
