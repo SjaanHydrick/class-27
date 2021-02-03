@@ -6,7 +6,7 @@ const Cat = ({ image, name }) => (
   <figure>
     {
       !image || image.url === undefined ?
-        <p>No Image Found</p>
+        <p className={styles.noImage}>No Image Found</p>
         : 
         <img src={image.url} />
 

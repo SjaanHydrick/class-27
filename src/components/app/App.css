@@ -1,16 +1,43 @@
-@font-face{
-    font-family: CatPaw;
-    src: url('../../fonts/Cat\ paw.ttf');
+@font-face {
+    font-family: Prism;
+    src: url('../../fonts/Prism-Regular.otf');
+}
+
+@font-face {
+    font-family: Lemon;
+    src: url('../../fonts/DK\ Lemon\ Yellow\ Sun.otf')
 }
 
 html {
     height: 100%;
+    margin: 0;
+    background-color: honeydew;
+}
+
+.header {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: Prism;
+    font-size: 80pt;
+    font-weight: normal;
+}
+
+h2 {
+    margin-top: 10px;
+    font-family: Lemon;
+    font-size: 30pt;
+    color: darkslategray;
 }
 
 .catList {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .cat {
@@ -19,12 +46,12 @@ html {
 }
 
 img {
-    height: 250;
+    height: 250px;
     width: 250px;
     object-fit: cover;
 }
 
 .catName {
-    font-family: CatPaw;
+    font-family: Lemon;
     text-align: center;
 }

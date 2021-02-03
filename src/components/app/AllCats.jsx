@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { getCats } from '../../services/catApi';
 import CatList from './CatList';
+import styles from './App.css';
 
 export default class AllCats extends Component {
     state = {
@@ -14,14 +15,14 @@ export default class AllCats extends Component {
 
     render() {
       const { cats } = this.state;
-      console.log(cats);
+      // console.log(cats);
       return (
         <div>
           {
             cats ? 
               <CatList cats={cats} />
               :
-              <p>Loading...</p>
+              <p className={styles.loading}>Loading...</p>
           }
         </div>
       );
