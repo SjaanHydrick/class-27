@@ -8,7 +8,7 @@ const Cat = ({ image, name }) => (
       !image || image.url === undefined ?
         <p className={styles.noImage}>No Image Found</p>
         : 
-        <img src={image.url} />
+        <img className={styles.thumbnail} src={image.url} />
 
     }
     <p className={styles.catName}>{name}</p>
