@@ -20,7 +20,7 @@ const CatDetail = () => {
         <div>
           {
             chosenCat.reference_image_id === undefined ?
-              <p className={styles.noImage}>No Image Found</p>
+              <p className={styles.noImagePage}>No Image Found</p>
               : 
               <img src={`https://cdn2.thecatapi.com/images/${chosenCat.reference_image_id}.jpg`} className={styles.pagePic}/>
           }

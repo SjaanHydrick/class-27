@@ -94,3 +94,55 @@ a {
     font-size: 25pt;
     color: indigo;
 }
+
+.pagePic {
+    width: 475px;
+    margin-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: double 5px indigo;
+    border-radius: 25px;
+}
+
+.noImagePage {
+    width: 465px;
+    height: 475px;
+    padding-left: 10px;
+    color: indigo;
+    background-color: gainsboro;
+    font-size: 100pt;
+    margin-top: 5%;
+    margin-bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: double 5px indigo;
+    border-radius: 25px;
+    font-family: Prism;
+}
+
+.catName {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 40pt;
+    font-family: Prism;
+}
+
+.origin {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-size: 30pt;
+    font-family: Lemon;
+}
+
+.desc {
+    text-align: center;
+    font-family: Lemon;
+    font-size: 20pt;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 22pt;
+}
