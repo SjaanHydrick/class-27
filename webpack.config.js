@@ -79,7 +79,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(jpeg|jpg|png|svg)$/,
+        test: /\.(jpeg|jpg|png|svg|ttf|woff2|woff)$/,
         use: {
           loader: 'url-loader',
           options: { limit: 1000 },

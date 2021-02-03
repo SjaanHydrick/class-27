@@ -1,0 +1,20 @@
+@font-face{
+    font-family: CatPaw;
+    src: url('../../fonts/Cat\ paw.ttf') format('tff');
+}
+
+.cat {
+    width: 300px;
+    height: 300px;
+}
+
+img {
+    display: none;
+}
+
+.cat-name {
+    font-family: CatPaw;
+    text-align: center;
+    background-color: blue;
+    border: solid 1px red;
+}
