@@ -15,7 +15,7 @@ export default class AllCats extends Component {
 
     render() {
       const { cats } = this.state;
-      // console.log(cats);
+
       return (
         <div>
           {
