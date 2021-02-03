@@ -123,10 +123,17 @@ a {
 }
 
 .catName {
+    font-size: 25pt;
+    font-family: Lemon;
+}
+
+.catNamePage {
+    font-family: Prism;
     margin-top: 2%;
     margin-bottom: 2%;
     font-size: 40pt;
-    font-family: Prism;
+    color: indigo;
+    text-align: center;
 }
 
 .origin {
@@ -144,5 +151,12 @@ a {
     margin-top: 1%;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 10%;
     line-height: 22pt;
+}
+
+.back {
+    font-family: Lemon;
+    color: darkslategray;
+    font-size: 20pt;
 }
