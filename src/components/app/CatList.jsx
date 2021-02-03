@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Cat from './Cat';
-import './App.css';
+import styles from './App.css';
 
 const CatList = ({ cats }) => {
   const catElements = cats.map(cat => (
-    <li key={cat.id}>
+    <div className={styles.cat} key={cat.id}>
       <Cat {...cat} />
-    </li>
+    </div>
   ));
 
   return (
-    <ul>
+    <div className={styles.catList}>
       {catElements}
-    </ul>
+    </div>
   );
 };
 

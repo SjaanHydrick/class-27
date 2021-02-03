@@ -1,6 +1,15 @@
 @font-face{
     font-family: CatPaw;
-    src: url('../../fonts/Cat\ paw.ttf') format('tff');
+    src: url('../../fonts/Cat\ paw.ttf');
+}
+
+html {
+    height: 100%;
+}
+
+.catList {
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .cat {
@@ -9,12 +18,12 @@
 }
 
 img {
-    display: none;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
 }
 
-.cat-name {
+.catName {
     font-family: CatPaw;
     text-align: center;
-    background-color: blue;
-    border: solid 1px red;
 }

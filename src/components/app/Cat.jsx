@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './App.css';
 
 const Cat = ({ image, name, temperament }) => (
-  <div className="cat">
+  <figure>
     {
       image ?
         <img src={image.url} />
@@ -10,9 +11,9 @@ const Cat = ({ image, name, temperament }) => (
         <p>No Image Found</p>
 
     }
-    <p className="cat-name">{name}</p>
-    <p className="cat-temper">{temperament}</p>
-  </div>
+    <p className={styles.catName}>{name}</p>
+    <p className={styles.catTemper}>{temperament}</p>
+  </figure>
 );
 
 Cat.propTypes = {
